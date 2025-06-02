@@ -1,0 +1,114 @@
+body {
+    display: inline-block;
+    align-content: center;
+    padding-left: 40%;
+    height: 100vh;
+    background-color: #ccb360;
+  }
+  
+  /* Polônia */
+  .container-polonia {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px ;
+    overflow: hidden;
+  }
+  
+  .parte-branca {
+    flex: 1;
+    background-color: white;
+  }
+  
+  .parte-vermelha {
+    flex: 1;
+    background-color: red;
+  }
+  
+  /* Japão */
+  .container-japao {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .circulo-vermelho {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+  }
+
+  /* Itália */
+  .container-italia{
+    width: 200px;
+    height: 100px;
+    background-color: #ffffff; 
+    display: flex;
+    justify-content: space-between; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+.parte-verde2 {
+    width: 70px;
+    height: 100px;
+    background-color: #3cb41e;  
+   
+}
+.parte-vermelha2 {
+    width: 70px;
+    height: 100px;
+    background-color: #e42727;  
+
+    
+  }
+
+  /* Suécia */
+  .container-suecia{
+    width: 200px;
+    height: 100px;
+    background-color: #005293; 
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    
+  }
+
+  .parte-vertical {
+    height: 100px;
+    width: 20px;
+    background-color: yellow;
+    position: absolute;
+    margin-left: 40px;
+  }
+
+  .parte-horizontal {
+    width: 200px;
+    height: 20px;
+    background-color: yellow;
+    position: absolute;
+    align-self: center;
+    
+  }
+
+  /* Trinidad e Tobago */
+  .container-trinidadEtobago{
+    width: 200px;
+    height: 100px;
+    background-color: #e42727;
+
+  }
+
+  .faixa-bandeira1{
+    width: 200px;
+    height: 100px;
+    background-color: #000000;
+    clip-path: polygon(0 0, 0 0, 0 0,);
+
+  }
