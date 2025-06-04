@@ -2,113 +2,460 @@ body {
     display: inline-block;
     align-content: center;
     padding-left: 40%;
-    height: 100vh;
+  height: 100vh;
     background-color: #ccb360;
-  }
-  
-  /* Polônia */
-  .container-polonia {
-    width: 200px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
+}
+
+/* Polônia */
+.container-polonia {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
     border-radius: 10px ;
-    overflow: hidden;
-  }
-  
-  .parte-branca {
-    flex: 1;
-    background-color: white;
-  }
-  
-  .parte-vermelha {
-    flex: 1;
-    background-color: red;
-  }
-  
-  /* Japão */
-  .container-japao {
-    width: 200px;
-    height: 100px;
-    background-color: white;
-    position: relative;
-    border-radius: 10px;
-  }
-  
-  .circulo-vermelho {
-    width: 60px;
-    height: 60px;
-    background-color: red;
-    border-radius: 50%;
-    position: absolute;
-    top: 20px;
-    left: 70px;
-  }
-
-  /* Itália */
-  .container-italia{
-    width: 200px;
-    height: 100px;
-    background-color: #ffffff; 
-    display: flex;
-    justify-content: space-between; 
-    border-radius: 10px;
-    overflow: hidden;
+  overflow: hidden;
+  border: 1px solid #000;
 }
+
+.parte-branca {
+  flex: 1;
+  background-color: white;
+}
+
+.parte-vermelha {
+  flex: 1;
+  background-color: red;
+}
+
+/* Japão */
+.container-japao {
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+.circulo-vermelho {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  border-radius: 50px;
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+
+/* Itália */
+.container-italia {
+  width: 200px;
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
 .parte-verde2 {
-    width: 70px;
-    height: 100px;
-    background-color: #3cb41e;  
-   
+  width: 70px;
+  height: 100px;
+  background-color: #3cb41e;
+
 }
+
 .parte-vermelha2 {
-    width: 70px;
-    height: 100px;
-    background-color: #e42727;  
+  width: 70px;
+  height: 100px;
+  background-color: #e42727;
 
-    
-  }
 
-  /* Suécia */
-  .container-suecia{
-    width: 200px;
-    height: 100px;
-    background-color: #005293; 
-    display: flex;
-    position: relative;
-    border-radius: 10px;
-    
-  }
+}
 
-  .parte-vertical {
-    height: 100px;
-    width: 20px;
-    background-color: yellow;
-    position: absolute;
-    margin-left: 40px;
-  }
+/* Suécia */
+.container-suecia {
+  width: 200px;
+  height: 100px;
+  background-color: #005293;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #000;
 
-  .parte-horizontal {
-    width: 200px;
-    height: 20px;
-    background-color: yellow;
-    position: absolute;
-    align-self: center;
-    
-  }
+}
 
-  /* Trinidad e Tobago */
-  .container-trinidadEtobago{
-    width: 200px;
-    height: 100px;
-    background-color: #e42727;
+.parte-vertical {
+  height: 100px;
+  width: 20px;
+  background-color: yellow;
+  position: absolute;
+  margin-left: 40px;
+}
 
-  }
+.parte-horizontal {
+  width: 200px;
+  height: 20px;
+  background-color: yellow;
+  position: absolute;
+  align-self: center;
 
-  .faixa-bandeira1{
-    width: 200px;
-    height: 100px;
-    background-color: #000000;
-    clip-path: polygon(0 0, 25% 0, 100% 100%, 75% 100%);
+}
 
-  }
+/* Trinidad e Tobago */
+.container-trinidadEtobago {
+  width: 200px;
+  height: 100px;
+  background-color: #e42727;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+/* Faixa branca superior */
+.container-trinidadEtobago {
+  width: 200px;
+  height: 100px;
+  background-color: #e42727;
+  /* vermelho da bandeira */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+/* Faixa branca superior */
+.faixa-bandeira1 {
+  position: absolute;
+  width: 300px;
+  height: 10px;
+  background-color: white;
+  transform: rotate(45deg);
+  top: 10px;
+  left: -80px;
+  z-index: 1;
+}
+
+/* Faixa preta (central) */
+.faixa-bandeira2 {
+  position: absolute;
+  width: 300px;
+  height: 20px;
+  background-color: black;
+  transform: rotate(45deg);
+  top: 20px;
+  left: -70px;
+  z-index: 2;
+}
+
+/* Faixa branca inferior */
+.faixa-bandeira3 {
+  position: absolute;
+  width: 300px;
+  height: 10px;
+  background-color: white;
+  transform: rotate(45deg);
+  top: 40px;
+  left: -60px;
+  z-index: 3;
+}
+
+
+/* Guiné-Bissau */
+.container-guineBissau {
+  display: flex;
+  width: 200px;
+  height: 100px;
+  border: 1px solid #000;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Faixa vermelha vertical com estrela */
+.faixa-vermelha {
+  background-color: #ce1126;
+  width: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.estrela {
+  color: black;
+  font-size: 40px;
+}
+
+/* Parte direita da bandeira */
+.faixas-direita {
+  width: 66.67%;
+  display: flex;
+  flex-direction: column;
+}
+
+.faixa-amarela {
+  background-color: #fcd116;
+  height: 50%;
+}
+
+.faixa-verde {
+  background-color: #009e49;
+  height: 50%;
+}
+
+/* Kuwait */
+.kuwait-flag {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  border: 1px solid #000;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Faixas horizontais */
+.kuwait-flag {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  border: 1px solid #000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.kuwait-flag .stripe {
+  height: 33.33%;
+  width: 100%;
+}
+
+.green {
+  background-color: #007A3D;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+.red {
+  background-color: #CE1126;
+}
+
+.triangulo-preto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
+  background-color: #000;
+}
+
+/* Grécia */
+.flag {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  border: 1px solid #000;
+}
+
+/* Faixas horizontais */
+.stripe {
+  width: 100%;
+  height: calc(100px / 9);
+  /* 9 faixas */
+}
+
+/* Cores das faixas: azul e branco alternados, começando com azul */
+.stripe:nth-child(odd) {
+  background-color: #0d5eaf;
+  /* azul da bandeira */
+}
+
+.stripe:nth-child(even) {
+  background-color: white;
+}
+
+/* Quadrado azul com cruz branca */
+.canton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(200px / 3.0);
+  /* 1/3 da largura da bandeira */
+  height: calc(100px * 5 / 9);
+  /* altura correspondente a 5 faixas */
+  background-color: #0d5eaf;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cruz branca */
+.cross-vertical,
+.cross-horizontal {
+  position: absolute;
+  background-color: white;
+}
+
+.cross-vertical {
+  width: 10px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cross-horizontal {
+  height: 10px;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Brasil */
+.container-brasil {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.area-verde {
+  width: 100%;
+  height: 100%;
+  background-color: #009b3a;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+
+}
+
+.area-amarela {
+  width: 100%;
+  height: 100%;
+  background-color: #ffdf00;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.area-azul {
+  width: 46px;
+  height: 46px;
+  background-color: #002776;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.faixa-branca {
+  width: 55px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%/100%;
+  position: absolute;
+  top: 20px;
+  left: -5px;
+  transform: rotate(-20deg);
+}
+
+
+/* Macedonia */
+.bandeira-macedonia {
+  width: 200px;
+  height: 100px;
+  background-color: #d20000;
+  /* Vermelho da bandeira */
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+/* Sol central */
+.sol {
+  width: 30px;
+  height: 30px;
+  background-color: #ffe600;
+  /* Amarelo do sol */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* Raios */
+.raio {
+  background-color: #ffe600;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Raios principais */
+.raio.vertical {
+  width: 10px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.raio.horizontal {
+  width: 100%;
+  height: 10px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* Raios diagonais */
+.raio.diagonal1 {
+  width: 300px;
+  height: 10px;
+  top: 50%;
+  left: -50px;
+  transform: rotate(45deg) translateY(-50%);
+  transform-origin: center;
+}
+
+.raio.diagonal2 {
+  width: 300px;
+  height: 10px;
+  top: 50%;
+  left: -50px;
+  transform: rotate(-45deg) translateY(-50%);
+  transform-origin: center;
+}
+
+/* Raios diagonais secundários para simetria (com espaçamento menor) */
+.raio.diagonal3 {
+  width: 300px;
+  height: 6px;
+  top: 50%;
+  left: -50px;
+  transform: rotate(30deg) translateY(-50%);
+  transform-origin: center;
+}
+
+.raio.diagonal4 {
+  width: 300px;
+  height: 6px;
+  top: 50%;
+  left: -50px;
+  transform: rotate(-30deg) translateY(-50%);
+  transform-origin: center;
+}
